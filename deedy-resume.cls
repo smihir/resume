@@ -60,7 +60,7 @@ Last Updated on \today % Last Updated text
 \centering{ % Center the contact information
 \color{headings} % Use the headings color
 \fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3} % Contact information font
-\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}} % Horizontal rule
+%\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}} % Horizontal rule
 \vspace{-5pt} % Reduce whitespace after the rule slightly
 }
 
