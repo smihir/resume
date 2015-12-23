@@ -1,2 +1,2 @@
 # Credits
-I am using the awesome [template](https://github.com/deedydas/Deedy-Resume) by @deedydas 
+I am using the awesome awesome-cv [template](https://github.com/posquit0/Awesome-CV) for my resume!

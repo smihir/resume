@@ -1,270 +1,90 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Deedy CV/Resume
-% XeLaTeX Template
-% Version 1.0 (5/5/2014)
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
 %
 % This template has been downloaded from:
-% http://www.LaTeXTemplates.com
+% https://github.com/posquit0/Awesome-CV
 %
-% Original author:
-% Debarghya Das (http://www.debarghyadas.com)
-% With extensive modifications by:
-% Vel (vel@latextemplates.com)
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
 %
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 %
-% Important notes:
-% This template needs to be compiled with XeLaTeX.
-%
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[11pt, a4paper]{awesome-cv}
 
-\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
-\usepackage{epstopdf}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     3rd party packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Needed to divide into several files
+\usepackage{import}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+\name{Mihir }{Shete}
+%\address{246-1002, Gwangmyeongmayrouge Apt. 86, Cheongna lime-ro, Seo-gu, Incheon-si, 22738, Rep. of KOREA}
+\mobile{(+1) 608-960-5708} 
+%%% Social
+\email{smihir@cs.wisc.edu}
+\homepage{cs.wisc.edu/~smihir}
+\github{smihir}
+\linkedin{mihirshete}
+%%% Optionals
+\position{Computer Science Graduate Student @ UW-Madison}
+%\quote{``Make the change that you want to see in the world."}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+\makecvfooter
+  {}
+  {Mihir Shete~~~·~~~Résumé}
+  {}
+
 \begin{document}
+%%% Make a header for CV with personal data
+\makecvheader
 
-\newcommand{\lsectionspace}{\vspace{3pt}} % Defines a command to add a set amount of space after sections and subsections
-%----------------------------------------------------------------------------------------
-%	TITLE SECTION
-%----------------------------------------------------------------------------------------
-%\lastupdated % Print the Last Updated text at the top right
-\begin{minipage}[t]{0.69\textwidth} % The left column takes up 33% of the text width of the page
-\hspace{49pt}
-\namesection{Mihir}{Shete}{ % Your name
-\hspace{49pt}
-\href{mailto:smihir@cs.wisc.edu}{smihir@cs.wisc.edu} | (608) 960.5708 \\% Your contact information
-}
-\end{minipage} % The end of the left column
-\begin{minipage}[t]{0.30\textwidth} % The left column takes up 33% of the text width of the page
-\vspace{-32pt}
-\includegraphics[height=10pt]{internet.png} Website: \href{https://pages.cs.wisc.edu/~smihir/}{~smihir} \\
-\includegraphics[height=10pt]{Gmail-256.png} GMail: \href{mailto:mihirsht@gmail.com}{mihirsht@gmail.com} \\
-\includegraphics[height=10pt]{Linkedin-256.png} LinkedIn: \href{https://www.linkedin.com/in/mihirshete}{mihirshete} \\
-\includegraphics[height=10pt]{GitHub-Mark-32px.png} Github: \href{https://github.com/smihir}{smihir} \\
-\includegraphics[height=10pt]{Facebook-256.png} Facebook: \href{https://www.facebook.com/mihirshete}{mihirshete} \\
-\vspace{-5pt} % Reduce whitespace after the rule slightly
-\end{minipage} % The end of the left column
-%----------------------------------------------------------------------------------------
-%\noindent\makebox[\linewidth]{\color{headings}\rule{\linewidth}{0.4pt}} % Horizontal rule
-\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
-%----------------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------------
-%	LEFT COLUMN
-%----------------------------------------------------------------------------------------
-%\begin{minipage}[t]{0.25\textwidth} % The left column takes up 33% of the text width of the page
-%------------------------------------------------
-% Skills
-%------------------------------------------------
-%\section{Skills}
-%\subsection{Programming}
-%C \textbullet{} Python \textbullet{} Shell \\
-%Matlab \textbullet{} Lua \textbullet{} R \\
-%Perl \textbullet{} C++
-%\vspace{\topsep}
-%\subsection{Others}
-%802.11 \textbullet{} Networking \textbullet{} \\
-%Linux Device Drivers \textbullet{} \\
-%HTML \textbullet{} CSS \textbullet{} \LaTeX
-%\lsectionspace % Some whitespace after the section
-%------------------------------------------------
-% Coursework
-%------------------------------------------------
-%\section{Coursework}
-%\subsection{Graduate}
-%\textbullet{} Operating Systems \\
-%\textbullet{} Computer Networks \\
-%\textbullet{} Introduction to Algorithms \\
-%\subsection{Undergraduate}
-%\textbullet{} Embedded System Design \\
-%\textbullet{} Medical Instrumentation \\
-%\textbullet{} Analog Electronics \\
-%\hphantom{\textbullet{}}{\footnotesize \textit{\textbf{(Professional Assistant) }}} \\
-%\textbullet{} Probability and Statistics \\
-%\subsection{Qualcomm}
-%\textbullet{} ARMv8 Architecture \\ \hphantom{\textbullet{}} and Design
-%\lsectionspace % Some whitespace after the section
-%------------------------------------------------
-% Internships
-%------------------------------------------------
-%\section{Internships}
-%\footnotesize \textbf{HTCondor} \\
-%\footnotesize \textit{(September 2015 – Till Date)} \\
-%\footnotesize \textbf{Cypress Semiconductor} \\
-%\footnotesize \textit{(July 2009 – December 2009)} \\
-%\footnotesize \textbf{Mahindra \& Mahindra} \\
-%\footnotesize \textit{(June 2008 - July 2008)}
-%\lsectionspace % Some whitespace after the section
-%------------------------------------------------
-% Opensource project links
-%------------------------------------------------
-%\section{Project Links}
-%\subsection{Qualcomm}
-%\footnotesize \textit{\textbf{(Opensource contributions only)} } \\
-%\textbullet{} \href{https://www.codeaurora.org/cgit/quic/la/platform/vendor/qcom-opensource/wlan/prima/}{Prima Wlan Driver} \\
-%\textbullet{} \href{https://www.codeaurora.org/cgit/quic/la/kernel/msm-3.10}{Qualcomm MSM Kernel} \\
-%\subsection{BITS-Pilani, Goa}
-%\textbullet{} \href{http://www.scribd.com/doc/248438366/Design-and-Development-of-a-Blood-Pressure-Monitor}{Design and Development of \\ \hphantom{\textbullet{}} Blood Pressure Monitor} \\
-%\textbullet{} \href{http://www.scribd.com/doc/248440573/Safety-Critical-Systems}{Safety Critical Systems and Design} \\
-%\lsectionspace % Some whitespace after the section
-%------------------------------------------------
-% Recognition
-%------------------------------------------------
-%\section{Recognition}
-%\textbullet{} 23\textsuperscript{rd} in the Merit List prepared by \\ \hphantom{\textbullet{}} Maharahstra State Board for \\ \hphantom{\textbullet{}} Secondary and Higher Secondary \\ \hphantom{\textbullet{}} Education\\
-%\textbullet{} 921\textsuperscript{st} in All India Engineering \\ \hphantom{\textbullet{}} Entrance Examinations \\
-%\hfill
-%----------------------------------------------------------------------------------------
-%\end{minipage} % The end of the left column
-%----------------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------------
-%	RIGHT COLUMN
-%----------------------------------------------------------------------------------------
-%
-\begin{minipage}[t]{1.0\textwidth} % The right column takes up 66% of the text width of the page
-
-%------------------------------------------------
-% Education
-%------------------------------------------------
-
-\section{Education}
-%\vspace{-5pt}
-%\noindent\makebox[\linewidth]{\color{headings}\rule{\linewidth}{0.4pt}} % Horizontal rule
-%\vspace{5pt}
-\runsubsection{University of Wisconsin-Madison}
-\descript{| M.S Computer Science}
-\location{August 2015 - December 2016 (Expected) | Madison WI, U.S.}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightitemize}
-\item Focusing on research and development in Operating Systems, Computer Networks and Internet of Things.
-\item Developing \textbf{Smart Shoes} for use in Healthcare, Fitness and Virtual Reality applications at \textbf{\textit{Internet of Things Lab}}
-\item \textbf{Coursework:} Operating Systems, Introduction to Computer Networks, Machine Learning
-\end{tightitemize}
-
-\sectionspace % Some whitespace after the section
-
-\runsubsection{BITS - Pilani, Goa Campus}
-\descript{| B.E Electronics and Instrumentation}
-\location{August 2006 – May 2010 | Goa, India}
-\begin{tightitemize}
-\item Concentrated on projects and internships in the areas of Embedded systems' design and development.
-\item Got involved in the PSoC club which was newly founded and contributed to designing training material which is used by Cypress Semiconductor as the official Lab Book for the University Alliance Program.
-\item \textbf{Coursework:} Embedded System Design, Medical Instrumentation
-\end{tightitemize}
-
-%\sectionspace % Some whitespace after the section
-
-
-%------------------------------------------------
-% Experience
-%------------------------------------------------
-
-\section{Experience}
-%\noindent\makebox[\linewidth]{\color{headings}\rule{\linewidth}{0.4pt}} % Horizontal rule
-\runsubsection{Qualcomm}
-\descript{| Senior Engineer}
-\location{July 2012 – July 2015 | Hyderabad, India}
-\begin{tightitemize}
-\item As a member of Wireless Connectivity group was involved in design and development of firmware and Linux device drivers for Qualcomm's wireless chipsets.
-\item Primarily contributed to Qualcomm's opensource \textbf{Prima} driver and was the maintainer of data path.
-\item Collaborated with the Linux community to engineer the regulatory framework in Prima driver.
-\item Developed good understanding of new and upcoming wireless protocols and standards like WFA's - WPS, P2P, WMM and IEEE 802.11ac/p
-\end{tightitemize}
-
-\sectionspace % Some whitespace after the section
-
-%------------------------------------------------
-
-\runsubsection{TeamF1 Networks}
-\descript{| Software Engineer}
-
-\location{May 2010 – June 2012 | Hyderabad, India}
-\begin{tightitemize}
-\item Design and Development of Linux device drivers for 802.11 Wireless SoCs in Enterprise Routers.
-\item Worked on securing the WiFi Alliance's 802.11n certification for interoperability.
-\item Involved in development of a 802.11r solution independent of the available open source alternatives.
-\item Implemented the RSTP functionality for Access Points.
-\end{tightitemize}
-
-\sectionspace % Some whitespace after the section
-
-\runsubsection{HTCondor}
-\descript{| Student Intern}
-
-\location{September 2015 – Till Date | Madison, Wisconsin}
-HTCondor is an Open-Source software for coarse-grained distributed parallelization of computationally intensive tasks,
-it is developed and maintained by Center for High Throughput Computing in the Department of Computer Sciences at UW-Madison.
-\begin{tightitemize}
-\item Design and Development of Regression Test Framework in Perl and C.
-\end{tightitemize}
-
-\sectionspace % Some whitespace after the section
-
-\runsubsection{BITS - Pilani, Goa Campus}
-\descript{| Professional Assistant}
-
-\location{January 2010 – May 2010 | Goa, India}
-\begin{tightitemize}
-\item Professional Assistant for the course - Analog Electronics(INSTR C364)
-\item Responsibilities included overseeing and grading Lab sessions
-\item Involved in designing assignments for the students
-\end{tightitemize}
-
-\sectionspace % Some whitespace after the section
-
-\runsubsection{Cypress Semiconductor}
-\descript{| Co-Op}
-
-\location{July 2009 – December 2009 | Chennai, India}
-\begin{tightitemize}
-\item Designed a Blood Pressure Monitor reference solution using Cypress' SoCs
-\item Involved in PCB design and development
-\item Developed BP calculating algorithms based on the current research and coded them in C
-\end{tightitemize}
-%\sectionspace % Some whitespace after the section
-
-\end{minipage} % The end of the right column
-
-\newpage % Start a new page
-
-\begin{minipage}[t]{1.0\textwidth} % The right column takes up 66% of the text width of the page
-%------------------------------------------------
-% Research
-%------------------------------------------------
-
-\section{Academic Projects \& Research}
-%\noindent\makebox[\linewidth]{\color{headings}\rule{\linewidth}{0.4pt}} % Horizontal rule
-\runsubsection{Design and Development of Blood Pressure Monitor} \\
-\location{Jan 2010 – April 2010 | Goa, India}
-\begin{tightitemize}
-\item[] Worked with \textbf{\href{http://in.linkedin.com/in/aniketsachan}{Aniket Sachan}} and \textbf{\href{http://in.linkedin.com/pub/vikash-sharma/16/865/aba}{Vikash Sharma}} under the guidance of \textbf{Sarita Kumari}. We concentrated on developing simulation of circuits and filters involved in the designing of a BP Monitor so that we can improve upon them. Another aspect of this project was to do a detailed analysis of the available BP calculating algorithms and implement them in Matlab.
-\end{tightitemize}
-
-\sectionspace % Some whitespace after the section
-
-%------------------------------------------------
-
-\runsubsection{Design and Verification of Safety Critical Systems} \\
-\location{Jan 2010 – April 2010 | Goa, India}
-\begin{tightitemize}
-\item[] A survey of the established standards for designing safety critical systems guided by \textbf{\href{http://universe.bits-pilani.ac.in/goa/anupkr/profile}{Dr. K.R Anupama}}.
-\end{tightitemize}
-
-\sectionspace % Some whitespace after the section
-
-
-\end{minipage} % The end of the right column
-%----------------------------------------------------------------------------------------
-%	SECOND PAGE
-%----------------------------------------------------------------------------------------
-
-%\newpage % Start a new page
-
-%\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
-%\end{minipage} % The end of the left column
-%\hfill
-%\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
-%\end{minipage} % The end of the right column
-
+%%% Import contents
+\import{\sectiondir}{education.tex}
+\import{\sectiondir}{experience.tex}
+\import{\sectiondir}{research.tex}
+\import{\sectiondir}{opensource.tex}
+\import{\sectiondir}{courseprojects.tex}
+\import{\sectiondir}{skills.tex}
 \end{document}
