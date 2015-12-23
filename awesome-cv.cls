@@ -108,7 +108,7 @@
 %-------------------------------------------------------------------------------
 %% Page Layout
 % Configure page margins with geometry
-\geometry{left=2.0cm, top=1.5cm, right=2.0cm, bottom=2.0cm, footskip=.5cm}
+\geometry{left=2.0cm, top=1.0cm, right=2.0cm, bottom=1.0cm, footskip=.5cm}
 
 %% Header & Footer
 % Set offset to each header and offset
@@ -507,11 +507,11 @@
 % Define a section for CV
 % Usage: \cvsection{<section-title>}
 \newcommand{\cvsection}[1]{
-  \par\addvspace{1.5ex}
+  %\par\addvspace{1.5ex}
   \phantomsection{}
   \sectionstyle{#1}
   \vhrulefill{0.9pt}
-  \par\nobreak\addvspace{1ex}
+  %\par\nobreak\addvspace{1ex}
 }
 
 % Define a subsection for CV
@@ -523,6 +523,7 @@
 
 % Define an environment for cventry
 \newenvironment{cventries}{
+  \vspace{-1pt}
   \begin{center}
 }{
   \end{center}
@@ -532,6 +533,7 @@
 \newcommand*{\cventry}[5]{
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
+  \vspace{-1pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{4.5cm}}
     \ifempty{#2#3}
       {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
@@ -539,6 +541,7 @@
       \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
     \multicolumn{2}{L{17cm}}{\descriptionstyle{#5}} \\
   \end{tabular*}
+  \vspace{-4pt}
 }
 
 % Define an environment for cvsubentry
