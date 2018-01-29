@@ -12,7 +12,8 @@
 %%%%%%%%%%%%%%
 
 \documentclass[letterpaper,10pt,oneside]{article}
-%\documentclass[a4paper,12pt,oneside]{article}
+%\documentclass[a4paper,10pt,oneside]{article}
+\usepackage[OT1]{fontenc}
 \usepackage{enumitem}
 \usepackage{ifthen}
 \usepackage{longtable}
@@ -119,7 +120,7 @@ Madison, WI 53706                     \hfill \href{https://pages.cs.wisc.edu/~sm
 
 \section{Education}{education}
 \firstentry{
-    \href{http://www.cs.wisc.edu/}{\textbf{University of Wisconsin-Madison}} \hfill \small{\datestamp{2015}{08}{15} -- Present} \newline
+    \href{http://www.cs.wisc.edu/}{\textbf{University of Wisconsin-Madison}} \hfill \small{\datestamp{2015}{09}{15} -- \datestamp{2017}{05}{14}} \newline
     MS in Computer Science \newline
     {\small \textbf{Coursework}: Advanced Operating Systems, Introduction to Computer Networks, Distributed Systems, Big Data Systems, Machine Learning.}
 }
@@ -136,10 +137,17 @@ Madison, WI 53706                     \hfill \href{https://pages.cs.wisc.edu/~sm
 
 \section{Experience}{experience}
 \firstentry{
+    {\textbf{Apple}} \hfill {\small Cupertino, CA} \newline
+    Software Engineer \hfill \small{\datestamp{2017}{07}{03} -- Present}
+    \begin{itemize}[noitemsep,nolistsep]
+        \item \small {Working on Always on Processor(AOP) for Apple's devices}
+    \end{itemize}
+}
+
+\entry{
     {\textbf{ZeroStack}} \hfill {\small Mountain View, CA} \newline
     Member of Technical Staff, Intern \hfill \small{\datestamp{2016}{05}{15} -- \datestamp{2016}{08}{02}}
     \begin{itemize}[noitemsep,nolistsep]
-        \item \small {Built a highly available DNS as a Service.}
         \item \small {Evaluated OpenStack Cinder's Image-Volume cache for speeding up volume creation.}
         \item \small {Developed a framework to run ZeroStack environment on OpenStack to test scalability of the solution.}
     \end{itemize}
@@ -151,7 +159,6 @@ Madison, WI 53706                     \hfill \href{https://pages.cs.wisc.edu/~sm
     \begin{itemize}[noitemsep,nolistsep]
         \item \small {Maintainer of 802.11 driver's data path and the DMA driver for Linux.}
         \item \small {Worked on optimizing the data path and the Linux scheduler for Heterogenous Multiprocessors.}
-        \item \small {Wrote scripts to analyze data path performance,power consumption and CPU loads.}
         \item \small {Contributed in the development process of a data offload engine between 802.11 and LTE processors.}
     \end{itemize}
 }
@@ -161,7 +168,6 @@ Madison, WI 53706                     \hfill \href{https://pages.cs.wisc.edu/~sm
     Software Engineer \hfill \small{\datestamp{2010}{05}{31} -- \datestamp{2012}{06}{23}}
     \begin{itemize}[noitemsep,nolistsep]
         \item \small {Design and Development of Linux device drivers for 802.11 Wireless SoCs in Enterprise Routers.}
-        \item \small {Involved in development of a 802.11r solution independent of the available open source alternatives.}
     \end{itemize}
 }
 
@@ -172,7 +178,7 @@ Madison, WI 53706                     \hfill \href{https://pages.cs.wisc.edu/~sm
 \section{Academic Projects \&\newline Research}{projects}
 \firstentry{
     {\textbf{Make Copy-on-Write Great Again}} \newline
-    University of Wisconsin-Madison \small{\hfill \datestamp{2016}{01}{23} --  Till Date} \newline
+    University of Wisconsin-Madison \small{\hfill \datestamp{2016}{01}{23} -- \datestamp{2017}{05}{14}} \newline
     Prof. Mike Swift \newline
     We are working on rethinking copy-on-write mechanisms and policies to reduce overhead of handling copy-on-write
     faults on large pages. These generic techniques can also be applied in the areas of File Systems where copy-on-write
@@ -181,7 +187,7 @@ Madison, WI 53706                     \hfill \href{https://pages.cs.wisc.edu/~sm
 \vspace{10pt}
 \entry{
     {\textbf{Geo-Distributed Machine Learning}} \newline
-    University of Wisconsin-Madison \small{\hfill \datestamp{2016}{09}{23} --  Till Date} \newline
+    University of Wisconsin-Madison \small{\hfill \datestamp{2016}{09}{23} --  \datestamp{2016}{12}{1}} \newline
 	Prof. Aditya Akella \newline
     Multinational organizations have data spread across geographically distributed datacenters. Running traditional 
     machine learning algorithms on the geo-distributed data can be costly in terms of time required for convergence
